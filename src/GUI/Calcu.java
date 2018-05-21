@@ -41,23 +41,23 @@ public class Calcu extends JPanel {
         suma.setBounds(new Rectangle(50, 115, widthB, heighB));
         
         resta = new JButton("RESTA");
-        resta.setBounds(new Rectangle(100, 115, widthB, heighB));
+        resta.setBounds(new Rectangle(150, 115, widthB, heighB));
         
         division = new JButton("DIVISION");
-        division.setBounds(new Rectangle(120, 115, widthB, heighB));
+        division.setBounds(new Rectangle(275, 115, widthB, heighB));
         
         multiplicacion = new JButton("MULTIPLICACION");
-        multiplicacion.setBounds(new Rectangle(150, 115, widthB, heighB));
+        multiplicacion.setBounds(new Rectangle(375, 115, widthB, heighB));
         
         biry = new JButton("BINARIO");
-        biry.setBounds(new Rectangle(120, 115, widthB, heighB));
+        biry.setBounds(new Rectangle(475, 115, widthB, heighB));
 
         entrada1.setEditable(true);
         entrada2.setEditable(true);
         binario.setEditable(true);
         salida.setEditable(false);
 
-        entrada1.addActionListener(new ActionListener() {
+        suma.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent arg0) {
                 salida.setText(entrada2.getText());
